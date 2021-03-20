@@ -31,11 +31,11 @@ function validarNum(key){
 /* api GitHub */
 
 
-function createNode(element) {
+function crearElemento(element) {
     return document.createElement(element);
 }
 
-function append(parent, el) {
+function agregar(parent, el) {
 return parent.appendChild(el);
 }
 
@@ -48,14 +48,14 @@ fetch(url)
 let repos = datos;
 return repos.map(function(repo) {
 
-    let divRepo = createNode('div');
-    let divImg = createNode('divi');
-    let divBody = createNode('div');
+    let divRepo = crearElemento('div');
+    let divImg = crearElemento('divi');
+    let divBody = crearElemento('div');
     
-    let imagen = createNode('img');
-    let titulo = createNode('h5');    
-    let descripcion = createNode('p');
-    let link = createNode('a');
+    let imagen = crearElemento('img');
+    let titulo = crearElemento('h5');    
+    let descripcion = crearElemento('p');
+    let link = crearElemento('a');
 
 
     imagen.src = repo.owner.avatar_url;
@@ -75,15 +75,15 @@ return repos.map(function(repo) {
     link.classList.add('btn','btn-primary','fs-9','p-2');
 
 
-    append(divRepo, divImg);
-    append(divRepo, divBody);
+    agregar(divRepo, divImg);
+    agregar(divRepo, divBody);
 
-    append(divImg, imagen);
-    append(divBody, titulo);    
-    append(divBody, descripcion);
-    append(divBody, link);
+    agregar(divImg, imagen);
+    agregar(divBody, titulo);    
+    agregar(divBody, descripcion);
+    agregar(divBody, link);
 
-    append(repositorio, divRepo);
+    agregar(repositorio, divRepo);
 
 })
 })

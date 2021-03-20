@@ -1,0 +1,61 @@
+@media (min-width: 768px) {
+    .show-md{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .hide-md{
+        display: none;
+    }
+    .ajustar{
+        margin-top: 6rem;
+    }
+}
+
+.hide-borde {
+    border: none;
+}
+
+.borde {
+    border-left: 5px solid rgb(204, 204, 231);
+    border-radius: 1%;
+}
+
+.fs-7 {
+    font-size: 0.9rem;
+}
+
+.fs-9 {
+    font-size: 0.8rem;    
+}
+
+.fs-10 {
+    font-size: 0.7rem; 
+}
+
+.botontop{
+    right:0.1rem;
+    bottom:0.2rem;
+    position:fixed;
+    font-size: 1.8rem;
+}
+
+.fab {
+    color:rgb(56, 53, 53);
+    font-size: 2rem;
+}
+
+.rrss .fab {
+    color:rgb(240, 239, 239);
+    font-size: 4rem;
+}
+
+.fas {
+        color:rgb(56, 53, 53);
+    font-size: 2rem;  
+}
+
+.sizeImagen{
+    width: 15rem;
+}
